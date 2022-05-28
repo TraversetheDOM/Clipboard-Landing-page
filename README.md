@@ -1,92 +1,104 @@
-# Frontend Mentor - Clipboard landing page
+# Table of contents
 
-![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Welcome! 👋
+## Overview
 
-Thanks for checking out this front-end coding challenge.
+### The challenge
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+The users would be able to;
 
-**To do this challenge, you need a basic understanding of HTML and CSS**
+- View the optimal layout for the site depending on their device's screen size.
+- See hover states for all interactive elements on the page.
 
-## The challenge
+### Screenshot
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+![Desktop View](screenshots/desktop-view.jpeg)
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+_A desktop view of the landing page_
 
-Your users should be able to: 
+![Tablet View](screenshots/tablet-view.jpeg)
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+_A tablet view of the landing page_
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+![Mobile View](screenshots/mobile-view.jpeg)
 
-## Where to find everything
+_An image showing the mobile view of the landing page_
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [See my solution URL here](https://github.com/salutDami/Clipboard-Landing-page)
+- Live Site URL: [See the live site URL here](https://salutdami.github.io/Clipboard-Landing-page/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Desktop-first workflow
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Before I started this project I was curious about how I would write less mdeia queries. SO after some googling I was able to see how I could make fonts, spacing and images responcive by making use of the clamp(), calc(), min() and max() property. Although the these functions were not used for the images but it was implemented when working with font-sizes, margin and paddings. I found it very fun to work with and it makes the landing page have fluid typography and spacing.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+I'll be showing some of the snippets on how I was bale to use this and it was also incorporated with css variables as seen below;
 
-## Deploying your project
+```css
+:root {
+  --fw-400: 400;
+  --fw-600: 600;
+  --ff-Bai: "Bai Jamjuree", sans-serif;
+  --fs-1: clamp(0.61rem, calc(0.53rem + 0.33vw), 1rem);
+  --fs-2: clamp(0.67rem, calc(0.59rem + 0.38vw), 1.12rem);
+  --fs-3: clamp(0.75rem, calc(0.66rem + 0.42vw), 1.26rem);
+  --fs-4: clamp(0.85rem, calc(0.74rem + 0.48vw), 1.42rem);
+  --fs-5: clamp(0.96rem, calc(0.83rem + 0.53vw), 1.6rem);
+  --fs-6: clamp(1.09rem, calc(0.94rem + 0.6vw), 1.81rem);
+  --fs-7: clamp(1.22rem, calc(1.06rem + 0.68vw), 2.03rem);
+  --fs-8: clamp(1.38rem, calc(1.18rem + 0.76vw), 2.29rem);
+  --fs-9: clamp(1.54rem, calc(1.33rem + 0.86vw), 2.56rem);
+  --fs-10: clamp(1.73rem, calc(1.5rem + 0.96vw), 2.88rem);
+  --fs-11: clamp(1.95rem, calc(1.7rem + 1.08vw), 3.25rem);
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+  --spacing-1: clamp(0.1rem, calc(0.06rem + 0vw), 0.1rem);
+  --spacing-2: clamp(0.21rem, calc(0.18rem + 0.08vw), 0.3rem);
+  --spacing-3: clamp(0.3rem, calc(0.26rem + 0.17vw), 0.5rem);
+  --spacing-4: clamp(0.5rem, calc(0.45rem + 0.25vw), 0.8rem);
+  --spacing-5: clamp(0.61rem, calc(0.53rem + 0.33vw), 1.01rem);
+  --spacing-6: clamp(0.9rem, calc(0.8rem + 0.5vw), 1.5rem);
+  --spacing-7: clamp(1.2rem, calc(1.04rem + 0.67vw), 2rem);
+  --spacing-8: clamp(1.81rem, calc(1.57rem + 1vw), 3.01rem);
+  --spacing-9: clamp(2.4rem, calc(2.08rem + 1.33vw), 4rem);
+  --spacing-10: clamp(3.6rem, calc(3.14rem + 2vw), 5.92rem);
+  --spacing-11: clamp(4.8rem, calc(4.16rem + 2.67vw), 8rem);
+}
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+.footer > .footer_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+}
+```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Continued development
 
-## Create a custom `README.md`
+I will still be working and learning how to use these CSS math functions in future projects and also use it when dealing with images. My use of grid will also be needing some work and it what used in the footer section for this landing page.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Useful resources
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- [Utopia](https://utopia.fyi/) - This really helped me with making the fluid typography and spacing. I would strongly recommend this for setting up your font-sizes and spaces.
+- [Kevin Powell](https://www.youtube.com/watch?v=wARbgs5Fmuw&t=11s) - This is youtube video by Kevin Powell also helped me with understanding how the clamp() function works.
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) - You can also check this documnetation as it goes more in-depth into how to use the CSS clamp function.
+- [Adli Purdila](https://webdesign.tutsplus.com/courses/a-beginners-guide-to-using-typographic-scales?utm_campaign=yt_tutsplus_SZYx4Jo5S3M&utm_medium=referral&utm_source=youtube.com&utm_content=description) - This short course by Adi Purdila was really fantastic as it helped to show me how to select type scales depending on the type of project which will be carried out. He also talked about some of the tips and tricks of making a scale responsive.
