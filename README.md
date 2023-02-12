@@ -37,8 +37,8 @@ _An image showing the mobile view of the landing page_
 
 ### Links
 
-- Solution URL: [See my solution URL here](https://github.com/salutDami/Clipboard-Landing-page)
-- Live Site URL: [See the live site URL here](https://salutdami.github.io/Clipboard-Landing-page/)
+- Solution URL: [See my solution URL here](https://github.com/TraversetheDOM/Clipboard-Landing-page)
+- Live Site URL: [See the live site URL here](https://TraversetheDOM.github.io/Clipboard-Landing-page/)
 
 ## My process
 
