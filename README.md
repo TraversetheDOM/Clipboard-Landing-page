@@ -37,8 +37,8 @@ _An image showing the mobile view of the landing page_
 
 ### Links
 
-- Solution URL: [See my solution URL here](https://github.com/TraversetheDOM/Clipboard-Landing-page)
-- Live Site URL: [See the live site URL here](https://TraversetheDOM.github.io/Clipboard-Landing-page/)
+- Solution URL: [See my solution URL here](https://github.com/stephenikuomola/Clipboard-Landing-page)
+- Live Site URL: [See the live site URL here](https://stephenikuomola.github.io/Clipboard-Landing-page/)
 
 ## My process
 
@@ -94,11 +94,11 @@ I'll be showing some of the snippets on how I was bale to use this and it was al
 
 ### Continued development
 
-I will still be working and learning how to use these CSS math functions in future projects and also use it when dealing with images. My use of grid will also be needing some work and it what used in the footer section for this landing page.
+I will still be working and learning how to use these CSS math functions in future projects and also use them when dealing with images. My use of the grid will also need some work, and it is what is used in the footer section for this landing page.
 
 ### Useful resources
 
-- [Utopia](https://utopia.fyi/) - This really helped me with making the fluid typography and spacing. I would strongly recommend this for setting up your font-sizes and spaces.
+- [Utopia](https://utopia.fyi/) - This helped me make the fluid typography and spacing. I recommend this for setting up your font sizes and spaces.
 - [Kevin Powell](https://www.youtube.com/watch?v=wARbgs5Fmuw&t=11s) - This is youtube video by Kevin Powell also helped me with understanding how the clamp() function works.
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) - You can also check this documnetation as it goes more in-depth into how to use the CSS clamp function.
 - [Adli Purdila](https://webdesign.tutsplus.com/courses/a-beginners-guide-to-using-typographic-scales?utm_campaign=yt_tutsplus_SZYx4Jo5S3M&utm_medium=referral&utm_source=youtube.com&utm_content=description) - This short course by Adi Purdila was really fantastic as it helped to show me how to select type scales depending on the type of project which will be carried out. He also talked about some of the tips and tricks of making a scale responsive.
